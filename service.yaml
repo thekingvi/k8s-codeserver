@@ -3,8 +3,10 @@ kind: Service
 metadata:
   name: code-service
 spec:
-  type: NodePort
+  selector:
+    app: code-server
   ports:
+    - protocol: TCP
       port: 8025
       targetPort: 8025
-      nodePort: 8025
+      

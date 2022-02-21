@@ -9,4 +9,4 @@ spec:
   ports:
     - targetPort: 8025
       port: 8025
-      nodePort: 8025
+      nodePort: 30008

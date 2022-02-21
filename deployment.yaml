@@ -5,9 +5,13 @@ metadata:
   labels:
     app: $code_server
 spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: $code_server
   template:
     metadata:
-      name: code_pod
+      name: code_server
       labels:
         app: $code_server
     spec:
@@ -16,7 +20,3 @@ spec:
           image: vinothmohan/code-server:latest
           ports:
             - containerPort: 8025
-replicas: 3
-selector:
-  matchLabels:
-    app: $code_server

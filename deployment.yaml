@@ -6,7 +6,8 @@ metadata:
     app: $code_server
 spec:
   template:
-    metadata: code_pod
+    metadata:
+      name: code_pod
       labels:
         app: $code_server
     spec:

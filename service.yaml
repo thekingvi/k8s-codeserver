@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: code_server
+  name: code-server
 spec:
   selector:
-    app: code_server
+    app: code-server
   ports:
     - protocol: TCP
       port: 8025

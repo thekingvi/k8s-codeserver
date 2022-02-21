@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: code_server_deployment
+  name: code-server-deployment
   labels:
-    app: code_server
+    app: code-server
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: code_server
+      app: code-server
   template:
     metadata:
-      name: code_server
+      name: code-server
       labels:
-        app: code_server
+        app: code-server
     spec:
       containers:
         - name: codeserver
